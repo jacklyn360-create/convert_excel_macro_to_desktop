@@ -16,6 +16,15 @@ A Python desktop application replacing the Excel/VBA response form with a more m
 3. Run the app:
    python main.py
 
+## Build executable
+From the project root, run:
+
+   pyinstaller --name "ResponseTracker" --onefile --windowed main.py
+
+Or use the helper script:
+
+   powershell -ExecutionPolicy Bypass -File scripts\build_app.ps1
+
 ## Project Structure
 - app/
   - ui/
