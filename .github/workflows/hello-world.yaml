@@ -7,10 +7,10 @@ on:
 
 jobs:
   say-hello:
-    runs-on: ubantu-latest
+    runs-on: ubuntu-latest
     steps:
-      name: Checkout code
-      uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-      name: Print hello
-      run: echo "Hello, GitHub Actions!"
+      - name: Print hello
+        run: echo "Hello, GitHub Actions!"
